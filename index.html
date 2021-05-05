@@ -4,47 +4,55 @@
         .active {
             cursor: default;
             text-decoration: none;
-        }     
+        }
 
         a {
             cursor: default;
             text-decoration: none;
             color: rgb(255,59,48);
-        }     
-            
-        body {
-            font:16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        @import url('https://rsms.me/inter/inter.css');
+        html, body { font-family: 'Inter', sans-serif; }
+        @supports (font-variation-settings: normal) {
+          html, body { font-family: 'Inter var', sans-serif; }
+        }
+
+        html, body {
+            font-size: 10pt;
             color: #666;
             -webkit-font-smoothing: antialiased;
             text-rendering: optimizeLegibility;
-            width: 11in;
-            height: 8.5in;
+            max-width: 8.5in;
+            max-height: 11in;
+            overflow: hidden;
             margin: auto;
+            padding: 0.125in 0.25in 0.125in 0.25in;
         }
 
         h1 {
-            font-size: 30px;
+            font-size: 14pt;
             letter-spacing: -1px;
             color: #222;
             font-weight: bold;
         }
 
         h3 {
-            font: normal 17px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 10pt;
             color: #aaa;
             font-weight: bold;
         }
 
         h2 {
-            font-size: 24px;
+            font-size: 12pt;
             letter-spacing: -1px;
             color: #666;
             font-weight: bold;
         }
 
         p.small {
+            font-size: 8pt;
             color: #bbb;
-            font-size: 14px;
             line-height: 1.5;
         }
 
@@ -57,11 +65,11 @@
             width: 100%;
             height: 100%;
             margin: auto;
-            padding: 10px;
+            padding: 1pt;
         }
 
         .side {
-            width: 40%;
+            width: 50%;
             height: 100%;
             float: left;
         }
@@ -79,61 +87,54 @@
 <body>
     <div class="header">
         <h1>Emil Sayahi</h1>
-            <p>(513) 484-0972 | <a href="mailto:em@emsa.cf">em@emsa.cf</a></p>
+            <p><a href="tel:+15134840972">+1 (513) 484-0972</a> | <a href="mailto:limesayahi@gmail.com">limesayahi@gmail.com</a></p>
     </div>
     <hr />
     <div class="container">
         <div class="side">
             <h2>Education</h1>
                 <h3>Turpin High School</h3>
-                <p>Cincinnati, OH | September 2017 - May 2020, expected</p>
+                <p>Cincinnati, OH | September 2017 - May 2020</p>
             <h2>Skills</h2>
-                <p>Java • Python • Javascript • .NET Framework • C# • Visual Basic • Jekyll • HTML5 • CSS • Git • ASP.NET • Blazor • Data structures • Software design patterns • Web applications • Unix system environments</p>
+                <p>CI/CD • Git • GTK • IPFS • Rust • C# • .NET Core • Java • Python • JavaScript • .NET Framework • Visual Basic • Jamstack • HTML • CSS • ASP.NET • Blazor • Unix-like systems</p>
             <h2>Coursework</h2>
-                <h3>Java, Python, Javascript</h3>
+                <h3>Java, Python, JavaScript</h3>
                 <p>
                     • Structures and algorithms
-                    <br />
                     • Introduction to computer systems
-                    <br />
                     • Principles of object-oriented programming
-                    <br />
                     • Parallel and sequential data
-                    <br />
                     • Software system construction
-                    <br />
                     • Principles of imperative programming
                 </p>
             <h2>Activities</h2>
-                <h3>Turpin High School, Peer-Tutoring Program | CS Tutor</h3>
-                    <p>
-                        • Sole computer science tutor
-                        <br />
-                        • Assist peers with Java, Python
-                        <br />
-                        • After school on Fridays
-                    </p>
                 <h3>Forest Hills School District, Gaming Tournaments | Organizer</h3>
                     <p>
                         • Assisted with tournament organization (September 2017 - May 2018)
                         <br />
                         • President, Smash Bros. Club - Organized gaming tournaments every week (September 2018 - May 2019)
                         <br />
-                        • Assistant seasonal tournament organizer at Anderson High School (September 2019 - May 2020, expected)
+                        • Assistant seasonal tournament organizer at Anderson High School (September 2019 - May 2020)
                     </p>
-            <h2>Web Presence</h2>
-                <p class="small">Website: <a href="https://emsa.cf/">emsa.cf</a></p>
-                <p class="small">GitHub: <a href="https://github.com/MadeByEmil">MadeByEmil</a></p>
-                <p class="small">Blog: <a href="https://tumblr.emsa.cf/">tumblr.emsa.cf</a></p>
+            <h2>Open-source</h2>
+              <h3><b>Oku</b> | Lead developer, maintainer</h3>
+                  <p class="small">November 2020 - Present</p>
+                  <p>Peer-to-peer browser aiming to create an alternative to the Web. Written in Rust, GUI in GTK.</p>
+              <h3><b>Dokkoo</b> | Lead developer, maintainer</h3>
+                  <p class="small">October 2020 - Present</p>
+                  <p>Data-driven media publication tool built for government, healthcare, and digital news. Potentially the fastest open-source Jamstack tool; written in Rust.</p>
+              <h3><b>Macro Output Key Kit</b> | Lead developer, maintainer</h3>
+                  <p>Technical standard for creating Jamstack-architectured projects.</p>
+            <h3>Web Presence</h2>
+                <p class="small">GitHub: <a href="https://github.com/Dirout">Dirout</a></p>
+                <p class="small">Blog: <a href="https://dirout.github.io/blog/">Mousehole</a></p>
         </div>
         <div class="main">
             <h2>Experience</h2>
                 <h3><b>Turpin High School, Computer Science Lab</b> | Lead Developer</h3>
-                <p class="small">August 2019 - Present | Cincinnati, OH</p>
+                <p class="small">August 2019 - May 2020 | Cincinnati, OH</p>
                 <p>
-                    • Develop backend and frontend code for Diademos, an Electron application that uses API calls, RSS feed reading, and Javascript libraries to display news articles from a variety of press outlets, along with a veritability score and tone detection for each article. Implements Indiana University's Hoaxy API.
-                    <br />
-                    • Leading a 3 person development team for deck, an experimental livestreaming platform that aims to make P2P, HLS live video, the industry standard for live media delivery.
+                    • Develop backend and frontend code for Diademos, an Electron application that uses API calls, RSS feed reading, and JavaScript libraries to display news articles from a variety of press outlets, along with a veritability score and tone detection for each article.
                     <br />
                     • Constructing a static web content publishing system, WDHAN, using Liquid syntax, Markdown, and C# for page generation.
                 </p>
@@ -149,14 +150,16 @@
                     • Prepared classrooms for standardized testing.
                 </p>
             <h2>Projects</h2>
-                <h3><b>Up</b> | Lead developer, repository manager</h3>
-                    <p class="small">Summer 2019</p>
-                    <p>Web app to upload and download files without a server. Uses Git for file uploads, GitHub API for page population.</p>
+                <h3><b>Mousehole</b> | Lead developer, repository manager</h3>
+                    <p class="small">Q1 2021</p>
+                    <p>Mobile-friendly blog with dark mode, written as a Mokk.</p>
+                <h3><b>Dirout.github.io</b> | Lead developer, repository manager</h3>
+                    <p>Homepage for Dirout, a Mokk which uses CI & CD to update the page using GitHub data accessed using Rust code.</p>
+                <h3><b>Ephyra</b> | Lead developer, repository manager</h3>
+                    <p>Example of a peer-to-peer, decentralized social network. Uses IPFS, viewable with Oku.</p>
                 <h3><b>SketchSpace</b> | Lead developer, repository manager</h3>
                     <p class="small">Summer 2018</p>
                     <p>Web app to publish comics on the internet. Uses Jekyll for static page generation.</p>
-                <h3><b>Basic-Jekyll</b> | Lead developer, repository manager</h3>
-                    <p>A port of 'Basic,' a blog template coded for Pelican (Python-based), to Jekyll (Ruby-based).</p>
                 <h3><b>FHSDTime</b> | Developer</h3>
                     <p class="small">Q1 2016</p>
                     <p>The software powering the time displays throughout Nagel Middle School, written in VB.NET.</p>
