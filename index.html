@@ -60,7 +60,7 @@
         }
 
         h3 {
-            font-size: 10pt;
+            font-size: 9pt;
             color: #aaa;
             font-weight: bold;
         }
@@ -70,6 +70,10 @@
             letter-spacing: -1px;
             color: #666;
             font-weight: bold;
+        }
+
+        strong {
+            color: #777;
         }
 
         p.small {
@@ -103,6 +107,10 @@
             padding-right: 0.125in;
         }
 
+        .small-section {
+            font-size: 8pt;
+        }
+
         .main {
             flex: 1;
         }
@@ -115,29 +123,31 @@
 <body>
     <div class="header">
         <h1>Emil Sayahi</h1>
-            <p><a href="tel:+15134840972">+1 (513) 484-0972</a> | <a href="mailto:limesayahi@gmail.com">limesayahi@gmail.com</a></p>
+            <p><a href="tel:+15134840972">+1 (513) 484-0972</a> | <a href="mailto:sayahie@miamioh.edu">sayahie@miamioh.edu</a></p>
     </div>
     <hr />
     <div class="container">
         <div class="side">
             <h2>Education</h1>
-                <h3>Turpin High School</h3>
-                <p>Cincinnati, OH | September 2017 - May 2020</p>
+                <h3><strong>Turpin High School</strong> | Academic Honors Diploma</h3>
+                <p class="small-section">Cincinnati, OH | September 2017 - May 2020</p>
+            <h3><strong>Miami University</strong> | Computer Science Major</h3>
+                <p class="small-section">Oxford, OH | August 2021 - May 2025 (expected)</p>
             <h2>Skills</h2>
-                <p>CI/CD • Git • GTK • IPFS • Rust • C# • .NET Core • Java • Python • JavaScript • .NET Framework • Visual Basic • Jamstack • HTML • CSS • ASP.NET • Blazor • Unix-like systems</p>
-            <h2>Coursework</h2>
+                <p class="small-section">GTK • IPFS • Rust • C# • .NET Core • GitHub Actions • Git • Java • Jamstack • HTML • CSS • Linux & BSDs</p>
+            <!-- <h2>Coursework</h2>
                 <h3>Java, Python, JavaScript</h3>
-                <p>
+                <p class="small-section">
                     • Structures and algorithms
                     • Introduction to computer systems
                     • Principles of object-oriented programming
                     • Parallel and sequential data
                     • Software system construction
                     • Principles of imperative programming
-                </p>
+                </p> -->
             <h2>Activities</h2>
-                <h3>Forest Hills School District, Gaming Tournaments | Organizer</h3>
-                    <p>
+                <h3><strong>Forest Hills School District, Gaming Tournaments</strong> | Organizer</h3>
+                    <p class="small-section">
                         • Assisted with tournament organization (September 2017 - May 2018)
                         <br />
                         • President, Smash Bros. Club - Organized gaming tournaments every week (September 2018 - May 2019)
@@ -145,30 +155,34 @@
                         • Assistant seasonal tournament organizer at Anderson High School (September 2019 - May 2020)
                     </p>
             <h2>Open-source</h2>
-              <h3><b>Oku</b> | Lead developer, maintainer</h3>
+              <div class="small-section">
+              <h3><strong>larz</strong> | Lead developer, maintainer</h3>
+                  <p class="small">August 2021 - Present</p>
+                  <p>Archive tool for efficient decompression, using the LZ4 algorithm. Written in Rust.</p>
+              <h3><strong>GTK-rs</strong> | Contributor</h3>
+                  <p class="small">June 2021 - Present</p>
+                  <p>Contributions to the Rust bindings for GTK, including libadwaita and WebKitGTK.</p>
+              <h3><strong>Oku</strong> | Lead developer, maintainer</h3>
                   <p class="small">November 2020 - Present</p>
                   <p>Peer-to-peer browser aiming to create an alternative to the Web. Written in Rust, GUI in GTK.</p>
-              <h3><b>Dokkoo</b> | Lead developer, maintainer</h3>
+              <h3><strong>Dokkoo</strong> | Lead developer, maintainer</h3>
                   <p class="small">October 2020 - Present</p>
                   <p>Data-driven media publication tool built for government, healthcare, and digital news. Potentially the fastest open-source Jamstack tool; written in Rust.</p>
-              <h3><b>Macro Output Key Kit</b> | Lead developer, maintainer</h3>
-                  <p>Technical standard for creating Jamstack-architectured projects.</p>
-            <h3>Web Presence</h2>
+            <h3><strong>Web Presence</strong></h2>
                 <p class="small">GitHub: <a href="https://github.com/Dirout">Dirout</a></p>
                 <p class="small">Blog: <a href="https://dirout.github.io/blog/">Mousehole</a></p>
-        </div>
+              </div>
+            </div>
         <div class="main">
             <h2>Experience</h2>
-                <h3><b>Turpin High School, Computer Science Lab</b> | Lead Developer</h3>
-                <p class="small">August 2019 - May 2020 | Cincinnati, OH</p>
-                <p>
-                    • Develop backend and frontend code for Diademos, an Electron application that uses API calls, RSS feed reading, and JavaScript libraries to display news articles from a variety of press outlets, along with a veritability score and tone detection for each article.
-                    <br />
+                <h3><strong>Turpin High School, Computer Science Lab</strong> | Lead Developer</h3>
+                <p class="small-section">August 2019 - May 2020 | Cincinnati, OH</p>
+                <p class="small-section">
                     • Constructing a static web content publishing system, WDHAN, using Liquid syntax, Markdown, and C# for page generation.
                 </p>
-                <h3><b>Nagel Middle School, Tech Squad</b> | IT Assistant</h3>
-                <p class="small">August 2015 - May 2016 | Cincinnati, OH</p>
-                <p>
+                <h3><strong>Nagel Middle School, Tech Squad</strong> | IT Assistant</h3>
+                <p class="small-section">August 2015 - May 2016 | Cincinnati, OH</p>
+                <p class="small-section">
                     • Assisted district IT daily in their work.
                     • Diagnosed and repaired district hardware.
                     • Corrected security issues with district network systems.
@@ -177,23 +191,41 @@
                     • Took hardware inventory.
                     • Prepared classrooms for standardized testing.
                 </p>
+            <h2>Certifications</h2>
+                <h3><strong>CompTIA A+</strong> Core 1</h3>
+                <p class="small-section">
+                    • Mobile devices
+                    • Networking technology
+                    • Hardware
+                    • Virtualisation
+                    • Cloud computing
+                    • Network troubleshooting
+                </p>
+            <div class="small-section">
             <h2>Projects</h2>
-                <h3><b>Mousehole</b> | Lead developer, repository manager</h3>
+                <h3><strong>Cincinnati Cedar Crafts</strong> | Lead developer</h3>
+                    <p class="small">Summer 2021</p>
+                    <p>Mobile-friendly e-commerce store for local artisan goods.</p>
+                <h3><strong>Mousehole</strong> | Lead developer, content author, repository manager</h3>
                     <p class="small">Q1 2021</p>
                     <p>Mobile-friendly blog with dark mode, written as a Mokk.</p>
-                <h3><b>Dirout.github.io</b> | Lead developer, repository manager</h3>
+                <!-- <h3><strong>Dirout.github.io</strong> | Lead developer, repository manager</h3>
                     <p>Homepage for Dirout, a Mokk which uses CI & CD to update the page using GitHub data accessed using Rust code.</p>
-                <h3><b>Ephyra</b> | Lead developer, repository manager</h3>
-                    <p>Example of a peer-to-peer, decentralized social network. Uses IPFS, viewable with Oku.</p>
-                <h3><b>SketchSpace</b> | Lead developer, repository manager</h3>
+                <h3><strong>Ephyra</strong> | Lead developer, repository manager</h3>
+                    <p>Example of a peer-to-peer, decentralized social network. Uses IPFS, viewable with Oku.</p> -->
+                <h3><strong>SketchSpace</strong> | Lead developer, repository manager</h3>
                     <p class="small">Summer 2018</p>
                     <p>Web app to publish comics on the internet. Uses Jekyll for static page generation.</p>
-                <h3><b>FHSDTime</b> | Developer</h3>
+                <h3><strong>FHSDTime</strong> | Developer</h3>
                     <p class="small">Q1 2016</p>
-                    <p>The software powering the time displays throughout Nagel Middle School, written in VB.NET.</p>
-                <h3><b>VBCalc</b> | Developer</h3>
+                    <p>The software powering the time displays throughout the Nagel Middle School building, written in VB.NET.</p>
+                <!-- <h3><b>VBCalc</b> | Developer</h3>
                     <p class="small">Q3 2015</p>
-                    <p>A WinForms GUI calculator program, written in VB.NET.</p>
+                    <p>A WinForms GUI calculator program, written in VB.NET.</p> -->
+                <h3><strong>Dragon Ball XenoVerse Mod Installer</strong> | Developer</h3>
+                    <p class="small">Q4 2015</p>
+                    <p>A tool to install mods for the video game Dragon Ball XenoVerse, written in VB.NET. 52,000 downloads to date.</p>
+            </div>
         </div>
     </div>
 </body>
