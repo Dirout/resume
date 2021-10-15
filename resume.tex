@@ -1,0 +1,143 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called EB Garamond 12.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = EB Garamond 12 All SC]{EB Garamond} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{8pt}{8pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Emil \textsc{Sayahi}}\bigskip\par} % Your name
+
+\section{Personal}
+
+\begin{tabular}{rl}
+\textsc{Birth:} & 2 June 2003, Kangasala, Pirkanmaa, Finland \\
+\textsc{Nationality:} & US, Finland, Sweden \\
+\textsc{Address:} & 700 S Maple St, Oxford, OH, US \\
+\textsc{Phone:} & +1 (513) 484-0972\\
+\textsc{email:} & \href{mailto:sayahie@miamioh.edu}{sayahie@miamioh.edu}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{Aug 2019-May 2020} & Lead Developer at \textsc{Turpin High School}, Computer Science Lab \emph{}\\
+& \footnotesize{Found and reported security exploits in school district systems, collaborated with teams on software projects, and built \& maintained a web content publishing system.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Sep 2017-May 2020} & Tournament Organiser at \textsc{Forest Hills School District} \emph{}\\
+& \footnotesize{Organised weekly esports tournaments, assisted in organising seasonal competitions.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Aug 2015-May 2016} & IT Assistant at \textsc{Nagel Middle School} \emph{}\\
+& \footnotesize{Corrected security issues with district network systems, addressed staff support tickets, performed yearly maintenance tasks, took hardware inventory, and prepared classrooms for standardized testing. }
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+\textsc{May 2025} & Computer Science \textsc{}\textsc{Bachelor of Science}\\ &
+\textbf{Miami University}, Oxford\\
+&\normalsize \textsc{GPA}: 4.0/4.0 \\
+&\\
+
+%------------------------------------------------
+
+\textsc{May 2020} & \textsc{}\textsc{Academic Honors Diploma}\\ &
+\textbf{Turpin High School}\\
+&\normalsize \textsc{GPA}: 4.17/4.0 {\hfill| \footnotesize \textsc{ACT}: 34/36}\\
+&\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS AND CERTIFICATES
+%----------------------------------------------------------------------------------------
+
+\section{Awards and Certificates}
+
+\begin{tabular}{rl}
+\textsc{August 2021} & Choose Ohio First Machine Learning Scholarship \footnotesize(\$3,416)\normalsize\\
+\textsc{July 2020} & AP Scholar with Distinction\\
+\textsc{July 2019} & AP Scholar\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+\textsc{English:} & Native language\\
+
+\textsc{Farsi:} & Receptively bilingual\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{tabular}{rl}
+\textsc{Systems} & Linux \& BSDs, Rust, GTK, IPFS, C\#, .NET Core, Python, Java, Git, HTML \& CSS\\
+\textsc{Applications} & GitHub, Photoshop, Microsoft Office and Google Workspace\\
+\textsc{Development} & Proficient with CI/CD, thorough with unit testing and drafting reports\\
+\textsc{Personal} & Strong communication skills, collaborative experience, thrives in fast-paced \& iterative environments,\\& detail oriented, skilled in using social media (Reddit, Twitter, Tumblr)\\
+
+\end{tabular}
+
+
+\end{document}
