@@ -6,8 +6,8 @@ jobs:
     name: "Publish CV"
     steps:
     - name: Checkout codebase
-        uses: actions/checkout@v2
-        with:
+      uses: actions/checkout@v2
+      with:
           token: ${{ secrets.GITHUB_TOKEN }}
     - name: Generate documentation
       run: |
