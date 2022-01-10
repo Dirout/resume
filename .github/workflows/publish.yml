@@ -12,8 +12,10 @@ jobs:
     - name: Generate documentation
       run: |
           curl -o pdf2htmlEX.deb https://github.com/pdf2htmlEX/pdf2htmlEX/releases/download/continuous/pdf2htmlEX-0.18.8.rc2-master-20200820-ubuntu-20.04-x86_64.deb
-          sudo apt-get -qq install ttfautohint ./pdf2htmlEX.deb > /dev/null
+          sudo apt-get -qq install texlive-xetex ttfautohint ./pdf2htmlEX.deb > /dev/null
           rm -f ./pdf2htmlEX.deb
+          xelatex resume.tex
+          mv -f resume.pdf 'Emil Sayahi.pdf'
           ./make_html.sh
     - name: Commit changes, if any
       run: |
