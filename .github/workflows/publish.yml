@@ -18,7 +18,7 @@ jobs:
           wget -q -O EBGaramond.zip https://bitbucket.org/georgd/eb-garamond/downloads/EBGaramond-0.016.zip > /dev/null
           unzip EBGaramond.zip > /dev/null
           mkdir -p /usr/share/fonts/opentype/ebgaramond/
-          cp ./EBGaramond-0.016/otf/*.otf /usr/share/fonts/opentype/ebgaramond/ > /dev/null
+          sudo cp ./EBGaramond-0.016/otf/*.otf /usr/share/fonts/opentype/ebgaramond/ > /dev/null
           rm -f ./pdf2htmlEX.deb > /dev/null
           rm -rf ./EBGaramond-0.016 > /dev/null
           rm -f ./EBGaramond.zip > /dev/null
