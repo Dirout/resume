@@ -14,7 +14,13 @@ jobs:
           sudo apt-get -qq install wget > /dev/null
           wget -q -O pdf2htmlEX.deb https://github.com/pdf2htmlEX/pdf2htmlEX/releases/download/continuous/pdf2htmlEX-0.18.8.rc2-master-20200820-ubuntu-20.04-x86_64.deb > /dev/null
           sudo apt-get -qq install texlive-full texlive-xetex texlive-luatex ttfautohint ./pdf2htmlEX.deb fonts-ebgaramond fonts-ebgaramond-extra > /dev/null
-          rm -f ./pdf2htmlEX.deb
+          wget -q -O EBGaramond.zip https://bitbucket.org/georgd/eb-garamond/downloads/EBGaramond-0.016.zip > /dev/null
+          unzip EBGaramond.zip > /dev/null
+          mkdir -p /usr/share/fonts/opentype/ebgaramond/
+          cp ./EBGaramond/otf/*.otf /usr/share/fonts/opentype/ebgaramond/ > /dev/null
+          rm -f ./pdf2htmlEX.deb > /dev/null
+          rm -rf ./EBGaramond > /dev/null
+          rm -f ./EBGaramond.zip > /dev/null
           xelatex resume.tex
           mv -f resume.pdf 'Emil Sayahi.pdf'
           ./make_html.sh
