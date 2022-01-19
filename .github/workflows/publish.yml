@@ -22,9 +22,9 @@ jobs:
           rm -f ./pdf2htmlEX.deb > /dev/null
           rm -rf ./EBGaramond-0.016 > /dev/null
           rm -f ./EBGaramond.zip > /dev/null
-          xelatex resume.tex
+          sudo xelatex resume.tex
           mv -f resume.pdf 'Emil Sayahi.pdf'
-          ./make_html.sh
+          sudo ./make_html.sh
     - name: Commit changes, if any
       run: |
         git config --global user.name 'Emil Sayahi'
