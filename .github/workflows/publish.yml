@@ -22,6 +22,7 @@ jobs:
           rm -f ./pdf2htmlEX.deb > /dev/null
           rm -rf ./EBGaramond-0.016 > /dev/null
           rm -f ./EBGaramond.zip > /dev/null
+          fc-cache -r > /dev/null
           sudo xelatex resume.tex
           mv -f resume.pdf 'Emil Sayahi.pdf'
           sudo ./make_html.sh
