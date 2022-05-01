@@ -14,11 +14,17 @@ jobs:
           sudo apt-get update > /dev/null
           sudo apt-get -qq install wget > /dev/null
           wget -q -O pdf2htmlEX.deb https://github.com/pdf2htmlEX/pdf2htmlEX/releases/download/continuous/pdf2htmlEX-0.18.8.rc2-master-20200820-ubuntu-20.04-x86_64.deb > /dev/null
-          sudo apt-get -qq install texlive-full texlive-xetex texlive-luatex ttfautohint ./pdf2htmlEX.deb > /dev/null
+          sudo apt-get -qq install texlive-full texlive-xetex texlive-luatex ttfautohint fonts-ebgaramond fonts-ebgaramond-extra ./pdf2htmlEX.deb > /dev/null
           wget -q -O EBGaramond.zip https://bitbucket.org/georgd/eb-garamond/downloads/EBGaramond-0.016.zip > /dev/null
           unzip EBGaramond.zip > /dev/null
           mkdir -p /usr/share/fonts/opentype/ebgaramond/
+          mkdir -p /usr/share/fonts/TTF/
+          mkdir -p /usr/local/share/fonts/otf/
+          mkdir -p /usr/local/share/fonts/ttf/
           sudo cp ./EBGaramond-0.016/otf/*.otf /usr/share/fonts/opentype/ebgaramond/ > /dev/null
+          sudo cp ./EBGaramond-0.016/ttf/*.ttf /usr/share/fonts/TTF/ > /dev/null
+          sudo cp ./EBGaramond-0.016/otf/*.otf /usr/local/share/fonts/otf/ > /dev/null
+          sudo cp ./EBGaramond-0.016/ttf/*.ttf /usr/local/share/fonts/ttf/ > /dev/null
           rm -f ./pdf2htmlEX.deb > /dev/null
           rm -rf ./EBGaramond-0.016 > /dev/null
           rm -f ./EBGaramond.zip > /dev/null
