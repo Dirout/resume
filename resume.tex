@@ -9,7 +9,7 @@
 %
 % Important note:
 % This template needs to be compiled with XeLaTeX.
-% The main document font is called EB Garamond 12.
+% The main document fonts are Crimson Pro, and EB Garamond 12.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -17,26 +17,28 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[a4paper,10pt]{article} % Default font size and paper size
+\documentclass[letterpaper,10pt]{article} % Default font size and paper size
 
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[SmallCapsFont = EB Garamond 12 All SC]{EB Garamond} % Main document font
+\setmainfont[SmallCapsFont = EB Garamond 12 All SC]{Crimson Pro} % Main document font
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
-\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
 % To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+\usepackage[a4paper, portrait, margin=1in]{geometry}
 
-\usepackage{hyperref} % Required for adding links	and customizing them
-\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\usepackage{hyperref} % Required for adding links and customizing them
+\definecolor{linkcolour}{rgb}{0,0.4784313725,1} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
-\titlespacing{\section}{0pt}{8pt}{8pt} % Spacing around sections
+\definecolor{sectioncolour}{rgb}{0,0.2509803922,0.3333333333}
+\titleformat{\section}{\Large\scshape\raggedright\color{sectioncolour}}{}{0em}{}[\color{black}\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{4pt}{4pt} % Spacing around sections
 
 \begin{document}
 
@@ -46,7 +48,7 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\par{\centering{\Huge Emil \textsc{Sayahi}}\bigskip\par} % Your name
+\par{{\centering{\Huge \setmainfont{EB Garamond}{Emil} \textsc{Sayahi}}\bigskip\par} % Name
 
 \section{Personal}
 
@@ -55,7 +57,7 @@
 \textsc{Nationality:} & US, Finland, Sweden \\
 \textsc{Languages:} & English (best language), Farsi (receptive bilingual)\\
 \textsc{Address:} & 230 Western College Drive, Oxford, OH, US \\
-\textsc{Contact:} & \href{tel:+1-513-484-0972}{\color{black}{+1 (513) 484-0972}}, \href{mailto:sayahie@miamioh.edu}{sayahie@miamioh.edu}\\
+\textsc{Contact:} & \href{tel:+1-513-484-0972}{\color{black}{+1 (513) 484-0972}}, \href{mailto:sayahie@miamioh.edu}{\color{black}sayahie@miamioh.edu}\\
 \end{tabular}}\normalsize
 
 %----------------------------------------------------------------------------------------
@@ -87,9 +89,8 @@ Primarily working to digitise collections with grant funding from the Miami Init
 \begin{tabular}{rl}	
 \textsc{Expected: May 2025} & \textsc{Bachelor of Science} in \emph{Computer Science}\\ &
 \textbf{Miami University}, Oxford\\ &
-\footnotesize \textsc{Related Coursework:} Object-Oriented Programming, Data Abstractions \& Structures,\\&
-\footnotesize Systems Programming, Database Systems \\
-&\footnotesize \textsc{GPA}: 3.85/4.00\normalsize \\
+\footnotesize \textsc{Related Coursework:} Object-Oriented Programming, Data Abstractions \& Structures, Systems, Database Systems\\&
+\footnotesize \textsc{GPA}: 3.85/4.00\normalsize \\
 
 %------------------------------------------------
 
@@ -103,7 +104,7 @@ Primarily working to digitise collections with grant funding from the Miami Init
 
 \begin{tabular}{rl}
 \footnotesize\textsc{Summer Scholarship} & \footnotesize\emph{Analysis of Potential Malicious Strategies toward Bit-Exchange with IPFS} \footnotesize{(April 2022 - Current)}\\
-& \footnotesize{Experimental analysis of efficacy in hampering network communication between nodes in a private IPFS network}\\
+& \footnotesize{Analysis of efficacy in hampering network communication between nodes in a private IPFS network}\\
 \textsc{Depi} \footnotesize{(March 2022 - Current)} & Terminal-based image viewer with network capabilities \& graphics protocol support\\
 \textsc{Odo} \footnotesize{(January 2022 - Current)} & Codebase automation tool as a lightweight alternative to a build system\\
 \textsc{Larz} \footnotesize{(August 2021 - Current)} & Archive tool, library, and format for efficient decompression (UStar \& LZ4)\\
