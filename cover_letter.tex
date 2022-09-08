@@ -1,0 +1,93 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Based on a design by:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% Source license:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document fonts are Crimson Pro, and EB Garamond 12.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper,32pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = EB Garamond 12 All SC]{Crimson Pro} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+\usepackage[a4paper, portrait, margin=1in]{geometry}
+
+ \usepackage{setspace}
+
+\usepackage{hyperref} % Required for adding links and customizing them
+\definecolor{linkcolour}{rgb}{0,0.4784313725,1} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\definecolor{sectioncolour}{rgb}{0,0.2509803922,0.3333333333}
+\titleformat{\section}{\Large\scshape\raggedright\color{sectioncolour}}{}{0em}{}[\color{black}\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{8pt}{8pt} % Spacing around sections
+
+\usepackage{parskip}
+\setlength{\parskip}{0.75\baselineskip plus 2pt}
+
+\onehalfspacing
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{
+{\centering{\Huge \setmainfont{EB Garamond}{Emil} \textsc{Sayahi}}\\
+
+\textsc{Address:} 230 Western College Drive, Oxford, OH, US
+·
+\textsc{Contact:} \href{tel:+1-513-484-0972}{\color{black}{+1 (513) 484-0972}}, \href{mailto:sayahie@miamioh.edu}{\color{black}sayahie@miamioh.edu}\\
+
+\bigskip\par} % Name
+
+%----------------------------------------------------------------------------------------
+%	Letter
+%----------------------------------------------------------------------------------------
+
+\begin{tabular}{lr}
+\vspace{0.125in}
+DATE\\
+Hiring Manager\\
+COMPANY\\
+STREET\\
+CITY\\
+\end{tabular}
+
+\indent
+
+\textbf{Dear Hiring Manager},
+
+LETTER CONTENT
+
+\textbf{Best Regards,}
+
+\textbf{Emil Sayahi}
+
+
+
+
+\end{document}
