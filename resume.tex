@@ -17,7 +17,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[letterpaper,10pt]{article} % Default font size and paper size
+\documentclass[letterpaper,8pt]{article} % Default font size and paper size
 
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
@@ -38,7 +38,7 @@
 
 \usepackage{titlesec} % Used to customize the \section command
 \definecolor{sectioncolour}{rgb}{0,0.2509803922,0.3333333333}
-\titleformat{\section}{\Large\scshape\raggedright\color{sectioncolour}}{}{0em}{}[\color{black}\titlerule] % Text formatting of sections
+\titleformat{\section}{\small\scshape\raggedright\color{sectioncolour}}{}{0em}{}[\color{black}\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{8pt}{8pt} % Spacing around sections
 
 \begin{document}
@@ -49,7 +49,7 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\par{
+\par
 {\centering{\Huge \setmainfont{EB Garamond}{Emil} \textsc{Sayahi}}\\
 \footnotesize{
 \textsc{Address:} 230 Western College Drive, Oxford, OH, US
@@ -58,13 +58,13 @@
 }\normalsize
 \bigskip\par} % Name
 
-\section{Personal}
+% \section{Personal}
 
-\footnotesize{\begin{tabular}{rl}
-\textsc{Birth:} & 2 June 2003. Kangasala, Pirkanmaa, Finland \\
-\textsc{Nationality:} & US, Finland, Sweden \\
-\textsc{Languages:} & English (best language), Farsi (receptive bilingual)\\
-\end{tabular}}\normalsize
+% \footnotesize{\begin{tabular}{rl}
+% \textsc{Birth:} & 2 June 2003. Kangasala, Pirkanmaa, Finland \\
+% \textsc{Nationality:} & US, Finland, Sweden \\
+% \textsc{Languages:} & English (best language), Farsi (receptive bilingual)\\
+% \end{tabular}}\normalsize
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -72,15 +72,15 @@
 
 \section{Education}
 
-\begin{tabular}{rl}	
-\textsc{Expected: May 2025} & \textsc{Bachelor of Science} in \emph{Computer Science}\\ &
+\footnotesize{\begin{tabular}{rl}	
+\textsc{August 2021 - May 2025} & \textsc{Bachelor of Science} in \emph{Computer Science}\\ &
 \textbf{Miami University}, Oxford\\ &
-\footnotesize \textsc{Related Coursework:} Object-Oriented Programming, Data Abstractions \& Structures, Systems, Database Systems\\&
-\footnotesize \textsc{GPA}: 3.85/4.00\normalsize \\
+\footnotesize \textsc{Related Coursework:} Machine Learning, Quantum Computing, Systems Programming\\&
+\footnotesize \textsc{GPA}: 3.83/4.00\normalsize \\
 
 %------------------------------------------------
 
-\end{tabular}
+\end{tabular}}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
@@ -89,13 +89,13 @@
 \section{Skills}
 
 \footnotesize{\begin{tabular}{rl}
-\textsc{Programming Languages} & Preferred languages are Rust, C\#, Java. Medium proficiency in JavaScript, C++, Python\\
+\textsc{Languages} & Rust, C\#, Java, JavaScript, C++, Python, D, SQL\\
 \textsc{Frameworks} & GTK, .NET\\
 \textsc{Software} & Linux, IPFS, Git, Capture One, Slack, TeamDynamix, Office 365, Google Workspace\\
 \textsc{Development} & Proficient with CI/CD, thorough with testing and drafting reports\\
 \textsc{Personal} & Writing detailed \& thorough documentation, iterating \& collaborating with internal \& external teams
 
-\end{tabular}\normalsize
+\end{tabular}}\normalsize
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE 
@@ -103,25 +103,43 @@
 
 \section{Experience}
 
-\begin{tabular}{r|p{11cm}}
-\textsc{August 2022 - Current} & Teaching Assistant at \textsc{Miami University}, Department of Computer Science \emph{}\\
+\footnotesize{\begin{tabular}{r|p{12cm}}
+\footnotesize{\textsc{August 2022 - Present}} & \footnotesize{Teaching Assistant at \textsc{Miami University}, \emph{Department of Computer Science}}\\
 & \footnotesize{TA for Systems I course at Miami University; course material consists of object-oriented programming, C/C++, introductory networking, introduction to computer architecture, and introduction to relational databases \& SQL. Responsible for grading assignments, assisting students in lab sessions, and holding weekly two-hour help sessions}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\textsc{May 2022 - Current} & Student Master II - Data Integration at \textsc{Miami University}, IT Services \emph{}\\
+\footnotesize{\textsc{May 2022 - Present}} & \footnotesize{Student Master II - Data Integration at \textsc{Miami University}, \emph{IT Services}}\\
 & \footnotesize{Working in maintaining \& developing integrations with applications in Miami University's IT Service Management ecosystems. Meeting, communicating, and collaborating with enterprise partners.
 Utilising Amazon RDS, MySQL, Python, and TeamDynamix iPaaS; writing code to handle university data, and writing progress reports \& documentation for relevant parties}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\textsc{March 2022 - May 2022} & Women's Grant Student Assistant at \textsc{Miami University}, University Libraries \emph{}\\
+\footnotesize{\textsc{March 2022 - Present}} & \footnotesize{Research Assistant at \textsc{Miami University}, \emph{Department of Computer Science}}\\
+& \footnotesize{Assisting Dr Suman Bhunia in research regarding networking protocol and device design. Presently working on discovering design flaws in the IPFS protocol, and exploring how to minimise dead zones with several potential transceiver configurations}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\footnotesize{\textsc{March 2022 - May 2022}} & \footnotesize{Women's Grant Student Assistant at \textsc{Miami University}, \emph{University Libraries}}\\
 & \footnotesize{Assisting the Digital Collections librarian at Walter Havighurst Special Collections, University Archives \& Preservation.
 Primarily working to digitise collections with grant funding from the Miami Initiative for Advancing, Mentoring, and Investing in Women (M.I.A.M.I. WOMEN)}\\
 \multicolumn{2}{c}{} \\
-\end{tabular}\normalsize
+
+%------------------------------------------------
+
+\footnotesize{\textsc{October 2021 - Present}} & \footnotesize{Student Leader at \textsc{Miami University}, \emph{Department of Computer Science}}\\
+& \footnotesize{Working alongside several students and the department chair to coordinate activities within the department, plan \& organise community service projects, and to exert student-body influence on the department's functions}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\footnotesize{\textsc{August 2021 - Present}} & \footnotesize{Student Advocate at \textsc{Miami University}, \emph{Government Relations Network}}\\
+& \footnotesize{Advocate for Miami University and higher education in Ohio. Make visits to the Ohio Statehouse to speak with legislators and their staff about the activity occurring at Miami University, and what the present needs of Ohio's universities are.}\\
+\multicolumn{2}{c}{} \\
+\end{tabular}}\normalsize
 
 %----------------------------------------------------------------------------------------
 %	Projects
@@ -130,13 +148,13 @@ Primarily working to digitise collections with grant funding from the Miami Init
 \section{Projects}
 
 \begin{tabular}{rl}
-\footnotesize\textsc{Summer Scholarship} & \footnotesize\emph{Analysis of Potential Malicious Strategies toward Bit-Exchange with IPFS} \footnotesize{(April 2022 - Current)}\\
+\footnotesize\textsc{Summer Scholarship} & \footnotesize\emph{Analysis of Potential Malicious Strategies toward Bit-Exchange with IPFS} \footnotesize{(April 2022 - August 2022)}\\
 & \footnotesize{Analysis of efficacy in hampering network communication between nodes in a private IPFS network}\\
-\textsc{Depi} \footnotesize{(March 2022 - Current)} & Terminal-based image viewer with network capabilities \& graphics protocol support\\
-\textsc{Odo} \footnotesize{(January 2022 - Current)} & Codebase automation tool as a lightweight alternative to a build system\\
-\textsc{Larz} \footnotesize{(August 2021 - Current)} & Archive tool, library, and format for efficient decompression (UStar \& LZ4)\\
-\textsc{Oku} \footnotesize{(November 2020 - Current)} & Peer-to-peer web browser with native IPFS support\\
-\textsc{Dokkoo} \footnotesize{(October 2020 - Current)} & \footnotesize{Data-driven Jamstack tool for creating publications, reports, dashboards, etc.}\\
+\textsc{Depi} \footnotesize{(March 2022 - Present)} & \footnotesize{Terminal-based image viewer with network capabilities \& graphics protocol support}\\
+\textsc{Odo} \footnotesize{(January 2022 - Present)} & \footnotesize{Codebase automation tool as a lightweight alternative to a build system}\\
+\textsc{Larz} \footnotesize{(August 2021 - Present)} & \footnotesize{Archive tool, library, and format for efficient decompression (TAR \& LZ4)}\\
+\textsc{Oku} \footnotesize{(November 2020 - Present)} & \footnotesize{Peer-to-peer web browser with native IPFS support}\\
+\textsc{Dokkoo} \footnotesize{(October 2020 - Present)} & \footnotesize{Data-driven Jamstack tool for creating publications, reports, dashboards, etc.}\\
 & \footnotesize{Dramatically out-performs competitors such as Jekyll, Gatsby, Eleventy, while scaling similarly}
 \end{tabular}
 
