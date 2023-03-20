@@ -38,8 +38,10 @@
 
 \usepackage{titlesec} % Used to customize the \section command
 \definecolor{sectioncolour}{rgb}{0,0.2509803922,0.3333333333}
-\titleformat{\section}{\small\scshape\raggedright\color{sectioncolour}}{}{0em}{}[\color{black}\titlerule] % Text formatting of sections
+\titleformat{\section}{\large\scshape\raggedright\color{sectioncolour}}{}{0em}{}[\color{black}\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{8pt}{8pt} % Spacing around sections
+
+\hyphenation{thatshouldnot} % Hyphenation
 
 \begin{document}
 
@@ -50,7 +52,8 @@
 %----------------------------------------------------------------------------------------
 
 \par
-{\centering{\Huge \setmainfont{EB Garamond}{Emil} \textsc{Sayahi}}\\
+{\centering{\LARGE \setmainfont{EB Garamond}{Emil} \textsc{Sayahi}}\\
+
 \footnotesize{
 \textsc{Address:} 230 Western College Drive, Oxford, OH, US
 ·
@@ -72,15 +75,10 @@
 
 \section{Education}
 
-\footnotesize{\begin{tabular}{rl}	
-\textsc{August 2021 - May 2025} & \textsc{Bachelor of Science} in \emph{Computer Science}\\ &
-\textbf{Miami University}, Oxford\\ &
-\footnotesize \textsc{Related Coursework:} Machine Learning, Quantum Computing, Systems Programming\\&
+\textbf{Miami University} (Oxford, OH)\\
+\textsc{Bachelor of Science} in \emph{Computer Science}, \textsc{August 2021 - May 2025 (expected)}\\
 \footnotesize \textsc{GPA}: 3.83/4.00\normalsize \\
-
-%------------------------------------------------
-
-\end{tabular}}
+\footnotesize \textsc{Related Coursework}: \scriptsize{Object-Oriented Programming, Data Structures, Systems, Databases, Algorithms, Machine Learning, Quantum Computing}\\
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
@@ -88,14 +86,14 @@
 
 \section{Skills}
 
-\footnotesize{\begin{tabular}{rl}
-\textsc{Languages} & Rust, C\#, Java, JavaScript, C++, Python, D, SQL\\
-\textsc{Frameworks} & GTK, .NET\\
-\textsc{Software} & Linux, IPFS, Git, Capture One, Slack, TeamDynamix, Office 365, Google Workspace\\
-\textsc{Development} & Proficient with CI/CD, thorough with testing and drafting reports\\
-\textsc{Personal} & Writing detailed \& thorough documentation, iterating \& collaborating with internal \& external teams
+\footnotesize{\begin{tabular}{ll}
+\textsc{Languages}: & Rust, C\#, Java, JavaScript, C++, Python, D, SQL, PHP\\
+\textsc{Frameworks}: & GTK, .NET\\
+\textsc{Software}: & Linux, IPFS, Git, Capture One, Slack, TeamDynamix, Office 365, Google Workspace, \LaTeX\\
+\textsc{Development}: & Proficient with CI/CD, thorough with testing and drafting reports\\
+\textsc{Personal}: & Writing detailed \& thorough documentation, iterating \& collaborating with internal \& external teams
 
-\end{tabular}}\normalsize
+\end{tabular}}\normalsize\\
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE 
@@ -104,42 +102,27 @@
 \section{Experience}
 
 \footnotesize{\begin{tabular}{r|p{12cm}}
-\footnotesize{\textsc{August 2022 - Present}} & \footnotesize{Teaching Assistant at \textsc{Miami University}, \emph{Department of Computer Science}}\\
+\footnotesize{\textsc{August 2022 - Present (Oxford, OH)}} & \footnotesize{Teaching Assistant at \textsc{Miami University}}:\\
 & \footnotesize{TA for Systems I course at Miami University; course material consists of object-oriented programming, C/C++, introductory networking, introduction to computer architecture, and introduction to relational databases \& SQL. Responsible for grading assignments, assisting students in lab sessions, and holding weekly two-hour help sessions}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\footnotesize{\textsc{May 2022 - Present}} & \footnotesize{Student Master II - Data Integration at \textsc{Miami University}, \emph{IT Services}}\\
+\footnotesize{\textsc{May 2022 - Present (Oxford, OH)}} & \footnotesize{Data Integration Intern at \textsc{Miami University}}:\\
 & \footnotesize{Working in maintaining \& developing integrations with applications in Miami University's IT Service Management ecosystems. Meeting, communicating, and collaborating with enterprise partners.
 Utilising Amazon RDS, MySQL, Python, and TeamDynamix iPaaS; writing code to handle university data, and writing progress reports \& documentation for relevant parties}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\footnotesize{\textsc{March 2022 - Present}} & \footnotesize{Research Assistant at \textsc{Miami University}, \emph{Department of Computer Science}}\\
-& \footnotesize{Assisting Dr Suman Bhunia in research regarding networking protocol and device design. Presently working on discovering design flaws in the IPFS protocol, and exploring how to minimise dead zones with several potential transceiver configurations}\\
-\multicolumn{2}{c}{} \\
-
-%------------------------------------------------
-
-\footnotesize{\textsc{March 2022 - May 2022}} & \footnotesize{Women's Grant Student Assistant at \textsc{Miami University}, \emph{University Libraries}}\\
+\footnotesize{\textsc{March 2022 - May 2022 (Oxford, OH)}} & \footnotesize{Women's Grant Student Assistant at \textsc{Miami University}}:\\
 & \footnotesize{Assisting the Digital Collections librarian at Walter Havighurst Special Collections, University Archives \& Preservation.
 Primarily working to digitise collections with grant funding from the Miami Initiative for Advancing, Mentoring, and Investing in Women (M.I.A.M.I. WOMEN)}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\footnotesize{\textsc{October 2021 - Present}} & \footnotesize{Student Leader at \textsc{Miami University}, \emph{Department of Computer Science}}\\
-& \footnotesize{Working alongside several students and the department chair to coordinate activities within the department, plan \& organise community service projects, and to exert student-body influence on the department's functions}\\
-\multicolumn{2}{c}{} \\
-
-%------------------------------------------------
-
-\footnotesize{\textsc{August 2021 - Present}} & \footnotesize{Student Advocate at \textsc{Miami University}, \emph{Government Relations Network}}\\
-& \footnotesize{Advocate for Miami University and higher education in Ohio. Make visits to the Ohio Statehouse to speak with legislators and their staff about the activity occurring at Miami University, and what the present needs of Ohio's universities are.}\\
-\multicolumn{2}{c}{} \\
-\end{tabular}}\normalsize
+\end{tabular}}\normalsize\\
 
 %----------------------------------------------------------------------------------------
 %	Projects
@@ -148,13 +131,13 @@ Primarily working to digitise collections with grant funding from the Miami Init
 \section{Projects}
 
 \begin{tabular}{rl}
-\footnotesize\textsc{Summer Scholarship} & \footnotesize\emph{Analysis of Potential Malicious Strategies toward Bit-Exchange with IPFS} \footnotesize{(April 2022 - August 2022)}\\
+\footnotesize\textsc{Summer Scholarship}: & \footnotesize\emph{Analysis of Potential Malicious Strategies toward Bit-Exchange with IPFS} \footnotesize{(April 2022 - August 2022)}\\
 & \footnotesize{Analysis of efficacy in hampering network communication between nodes in a private IPFS network}\\
-\textsc{Depi} \footnotesize{(March 2022 - Present)} & \footnotesize{Terminal-based image viewer with network capabilities \& graphics protocol support}\\
-\textsc{Odo} \footnotesize{(January 2022 - Present)} & \footnotesize{Codebase automation tool as a lightweight alternative to a build system}\\
-\textsc{Larz} \footnotesize{(August 2021 - Present)} & \footnotesize{Archive tool, library, and format for efficient decompression (TAR \& LZ4)}\\
-\textsc{Oku} \footnotesize{(November 2020 - Present)} & \footnotesize{Peer-to-peer web browser with native IPFS support}\\
-\textsc{Dokkoo} \footnotesize{(October 2020 - Present)} & \footnotesize{Data-driven Jamstack tool for creating publications, reports, dashboards, etc.}\\
+\textsc{Depi} \footnotesize{(March 2022 - Present)}: & \footnotesize{Terminal-based image viewer with network capabilities \& graphics protocol support}\\
+\textsc{Odo} \footnotesize{(January 2022 - Present)}: & \footnotesize{Codebase automation tool as a lightweight alternative to a build system}\\
+\textsc{Larz} \footnotesize{(August 2021 - Present)}: & \footnotesize{Archive tool, library, and format for efficient decompression (TAR \& LZ4)}\\
+\textsc{Oku} \footnotesize{(November 2020 - Present)}: & \footnotesize{Peer-to-peer web browser with native IPFS support}\\
+\textsc{Dokkoo} \footnotesize{(October 2020 - Present)}: & \footnotesize{Data-driven Jamstack tool for creating publications, reports, dashboards, etc.}\\
 & \footnotesize{Dramatically out-performs competitors such as Jekyll, Gatsby, Eleventy, while scaling similarly}
 \end{tabular}
 
@@ -165,10 +148,13 @@ Primarily working to digitise collections with grant funding from the Miami Init
 \section{Awards and Certificates}
 
 \footnotesize{\begin{tabular}{rl}
-\textsc{August 2022} & Choose Ohio First Machine Learning Scholarship \footnotesize(\$4,099)\normalsize\\
-\textsc{April 2022} & Undergraduate Summer Scholarship Program \footnotesize(\$2,600)\\
-\textsc{December 2021} & Bertelsmann Technology Scholarship Program\\
-\textsc{August 2021} & Choose Ohio First Machine Learning Scholarship \footnotesize(\$3,416)\normalsize\\
+\textsc{January 2023}: & Dean's List (Fall 2023)\\
+\textsc{August 2022}: & Choose Ohio First Machine Learning Scholarship \footnotesize(\$4,099)\normalsize\\
+\textsc{June 2022}: & Dean's List (Spring 2022)\\
+\textsc{April 2022}: & Undergraduate Summer Scholarship Program \footnotesize(\$2,600)\\
+\textsc{February 2022}: & Dean's List (Fall 2021)\\
+\textsc{December 2021}: & Bertelsmann Technology Scholarship Program\\
+\textsc{August 2021}: & Choose Ohio First Machine Learning Scholarship \footnotesize(\$3,416)\normalsize\\
 \end{tabular}}\normalsize
 
 
