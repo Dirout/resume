@@ -37,9 +37,9 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
-\definecolor{sectioncolour}{rgb}{0,0.2509803922,0.3333333333}
-\titleformat{\section}{\large\scshape\raggedright\color{sectioncolour}}{}{0em}{}[\color{black}\titlerule] % Text formatting of sections
-\titlespacing{\section}{0pt}{8pt}{8pt} % Spacing around sections
+\definecolor{sectioncolour}{rgb}{0.3333333333,0.08235294118,0}
+\titleformat{\section}{\large\raggedright\color{sectioncolour}}{}{0em}{}[\color{black}\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{6pt}{6pt} % Spacing around sections
 
 \hyphenation{thatshouldnot} % Hyphenation
 \usepackage[none]{hyphenat}
@@ -47,27 +47,27 @@
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
+% \setlength\tabcolsep{4pt}
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
 \par
-{\centering{\LARGE \setmainfont{EB Garamond}{Emil} \textsc{Sayahi}}\\
+{\centering{\LARGE \setmainfont{EB Garamond}{Emil Sayahi}}\\
 
 \footnotesize{
-\textsc{Address:} 215 Foxfire Drive, Apartment 307, Oxford, OH, US
-·
-\textsc{Contact:} \href{tel:+1-513-484-0972}{\color{black}{+1 (513) 484-0972}}, \href{mailto:sayahie@miamioh.edu}{\color{black}sayahie@miamioh.edu}\\
-}\normalsize
-\bigskip\par} % Name
+Oxford, OH
+$\cdot$
+\href{tel:+1-513-484-0972}{\color{black}{+1 (513) 484-0972}}, \href{mailto:limesayahi@gmail.com}{\color{black}limesayahi@gmail.com}\\
+}} % Name
 
 % \section{Personal}
 
 % \footnotesize{\begin{tabular}{rl}
-% \textsc{Birth:} & 2 June 2003. Kangasala, Pirkanmaa, Finland \\
-% \textsc{Nationality:} & US, Finland, Sweden \\
-% \textsc{Languages:} & English (best language), Farsi (receptive bilingual)\\
+% \textbf{Birth:} & 2 June 2003. Kangasala, Pirkanmaa, Finland \\
+% \textbf{Nationality:} & US, Finland, Sweden \\
+% \textbf{Languages:} & English (best language), Farsi (receptive bilingual)\\
 % \end{tabular}}\normalsize
 
 %----------------------------------------------------------------------------------------
@@ -76,10 +76,13 @@
 
 \section{Education}
 
-\textbf{Miami University} (Oxford, OH)\\
-\textsc{Bachelor of Science} in \emph{Computer Science}, \textsc{August 2021 - May 2025 (expected)}\\
-\footnotesize \textsc{GPA}: 3.75/4.00\normalsize \\
-\footnotesize \textsc{Related Coursework}: \scriptsize{Object-Oriented Programming, Data Structures, Systems, Databases, Algorithms, Machine Learning, Quantum Computing}\\
+\footnotesize{
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} lr }
+\textbf{Miami University} & Oxford, OH\\
+\emph{Bachelor of Science} in \emph{Computer Science} & August 2021 - May 2024\\
+\multicolumn{2}{p{\linewidth}}{GPA\@: 3.77/4.00}\\
+\multicolumn{2}{p{\linewidth}}{Relevant Coursework: Object-Oriented Programming, Web Applications, Data Structures, Databases, Algorithms, Probability, Regression, Statistical Learning, Machine Learning, Quantum Computing}\\
+\end{tabular*}}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
@@ -88,13 +91,10 @@
 \section{Skills}
 
 \footnotesize{\begin{tabular}{ll}
-\textsc{Languages}: & Rust, C\#, Java, JavaScript, C++, Python, D, SQL, PHP\\
-\textsc{Technologies}: & GTK, .NET, React.js, Apollo GraphQL, Docker, MongoDB\\
-\textsc{Software}: & Jira, Jenkins, Linux, IPFS, Git, Capture One, Slack, TeamDynamix, Office 365, Google Workspace, \LaTeX\\
-\textsc{Development}: & Proficient with CI/CD, thorough with testing and drafting reports\\
-\textsc{Personal}: & Writing detailed \& thorough documentation, iterating \& collaborating with internal \& external teams
-
-\end{tabular}}\normalsize\\
+\textbf{Languages}: & Rust, C\#, Java, JavaScript, C++, Python, D, SQL, PHP\\
+\textbf{Technologies}: & GTK, .NET, React.js, Apollo GraphQL, Docker, Kubernetes, MongoDB, MySQL, GitHub Workflows\\
+\textbf{Software}: & Jira, Jenkins, Linux, IPFS, Git, GitHub, Capture One, Slack, TeamDynamix, Office 365, Google Workspace, \LaTeX\\
+\end{tabular}}\\
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE 
@@ -102,74 +102,97 @@
 
 \section{Experience}
 
-\footnotesize{\begin{tabular}{r|p{12cm}}
+\footnotesize{
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} lr }
 
-\footnotesize{\textsc{May 2023 - August 2023 (Remote)}} & \footnotesize{Intern at \textsc{HCLSoftware}}:\\
-& \footnotesize{Worked as a backend \& frontend core-team developer on the HCL Accelerate and IBM UrbanCode Velocity products. Developed frontend of a significant customer-facing feature in the final product update within the internship period.}\\
+% \footnotesize{Intern at \textbf{HCLSoftware} (\textbf{May 2023 - August 2023})}:\\
+% \tiny{Remote}\\
+\textbf{HCLSoftware} & \footnotesize{Remote}\\
+\footnotesize{Intern} & \footnotesize{May 2023 - August 2023}\\
+\multicolumn{2}{p{\linewidth}}{\footnotesize{Worked as a backend \& frontend core-team developer on the HCL Accelerate and IBM UrbanCode Velocity products. Developed frontend of a significant customer-facing feature in the final product update within the internship period.}}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
     
-\footnotesize{\textsc{August 2022 - May 2023 (Oxford, OH)}} & \footnotesize{Teaching Assistant at \textsc{Miami University}}:\\
-& \footnotesize{TA for Systems I course at Miami University; course material consists of object-oriented programming, C/C++, introductory networking, introduction to computer architecture, and introduction to relational databases \& SQL.\@ Responsible for grading assignments, assisting students in lab sessions, and holding weekly two-hour help sessions.}\\
+% \footnotesize{Teaching Assistant at \textbf{Miami University} (\textbf{August 2022 - December 2023})}:\\
+\textbf{Miami University, Department of Computer Science \& Software Engineering} & \footnotesize{Oxford, OH}\\
+\footnotesize{Teaching Assistant} & \footnotesize{August 2022 - December 2023}\\
+% \tiny{Oxford, OH}\\
+\multicolumn{2}{p{\linewidth}}{\footnotesize{TA for Systems I and Fundamentals of Programming courses at Miami University; course material consists of object-oriented programming, Java, C/C++, introductory networking, introduction to computer architecture, and introduction to relational databases \& SQL.\@ Responsible for grading assignments, assisting students in lab sessions, and holding weekly two-hour help sessions.}}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\footnotesize{\textsc{May 2022 - Present (Oxford, OH)}} & \footnotesize{Data Integration Intern at \textsc{Miami University}}:\\
-& \footnotesize{Working in maintaining \& developing integrations with applications in Miami University's IT Service Management ecosystems. Meeting, communicating, and collaborating with enterprise partners. Utilising Amazon RDS, MySQL, Python, and TeamDynamix iPaaS;\@ writing code to handle university data, and writing progress reports \& documentation for relevant parties. Presented at the 2023 Ohio Higher Education Computing Council (OHECC) Conference at Wright State University on ITSM best practices for institutions of higher education.}\\
+% \footnotesize{Data Integration Intern at \textbf{Miami University} (\textbf{May 2022 - Present})}:\\
+% \tiny{Oxford, OH}\\
+\textbf{Miami University, IT Services} & \footnotesize{Oxford, OH}\\
+\footnotesize{Data Integration Intern} & \footnotesize{May 2022 - Present}\\
+\multicolumn{2}{p{\linewidth}}{\footnotesize{Working in maintaining \& developing integrations with applications in Miami University's IT Service Management ecosystems. Meeting, communicating, and collaborating with enterprise partners. Utilising Amazon RDS, MySQL, Python, and TeamDynamix iPaaS;\@ writing code to handle university data, and writing progress reports \& documentation for relevant parties. Presented at the 2023 Ohio Higher Education Computing Council (OHECC) Conference at Wright State University on ITSM best practices for institutions of higher education.}}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\footnotesize{\textsc{March 2022 - May 2022 (Oxford, OH)}} & \footnotesize{Women's Grant Student Assistant at \textsc{Miami University}}:\\
-& \footnotesize{Assisting the Digital Collections librarian at Walter Havighurst Special Collections, University Archives \& Preservation. Primarily working to digitise collections with grant funding from the Miami Initiative for Advancing, Mentoring, and Investing in Women (M.I.A.M.I. WOMEN).}\\
+% \footnotesize{Women's Grant Student Assistant at \textbf{Miami University} (\textbf{March 2022 - May 2022})}:\\
+% \tiny{Oxford, OH}\\
+\textbf{Miami University, University Libraries} & \footnotesize{Oxford, OH}\\
+\footnotesize{Women's Grant Student Assistant} & \footnotesize{March 2022 - May 2022}\\
+\multicolumn{2}{p{\linewidth}}{\footnotesize{Assisting the Digital Collections librarian at Walter Havighurst Special Collections, University Archives \& Preservation. Primarily working to digitise collections with grant funding from the Miami Initiative for Advancing, Mentoring, and Investing in Women (M.I.A.M.I. WOMEN).}}\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\footnotesize{\textsc{August 2021 - Present (Oxford, OH)}} & \footnotesize{Government Relations Intern at \textsc{Miami University}}:\\
-& \footnotesize{Advocating for Miami University and higher education in Washington, DC and the Ohio Statehouse in Columbus, OH.\@ Meeting with Ohio State Senators \& Representatives, the Chancellor of the Ohio Department of Higher Education, and legislative aides of US Congresspersons.\@ Priorities include prioritising funding for the Federal Pell Grant Program, Ohio College Opportunity Grant (OCOG), Ohio State Share of Instruction (SSI), and the Choose Ohio First (COF) Scholarship Program.}\\
-\multicolumn{2}{c}{} \\
+% \footnotesize{Government Relations Intern at \textbf{Miami University} (\textbf{August 2021 - Present})}:\\
+% \tiny{Oxford, OH}\\
+\textbf{Miami University, Office of Government Relations} & \footnotesize{Oxford, OH}\\
+\footnotesize{Government Relations Intern} & \footnotesize{August 2021 - Present}\\
+\multicolumn{2}{p{\linewidth}}{\footnotesize{Advocating for Miami University and higher education in Washington, DC and the Ohio Statehouse in Columbus, OH.\@ Meeting with Ohio State Senators \& Representatives, the Chancellor of the Ohio Department of Higher Education, and legislative aides of US Representatives.\@ Priorities include supporting funding for the Federal Pell Grant Program, Ohio College Opportunity Grant (OCOG), Ohio State Share of Instruction (SSI), and the Choose Ohio First (COF) Scholarship Program.}}\\
+% \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\end{tabular}}\normalsize\\
+\end{tabular*}}\\
 
 %----------------------------------------------------------------------------------------
 %	Projects
 %----------------------------------------------------------------------------------------
 
-\section{Projects}
+\section{Presentations \& Projects}
 
-\begin{tabular}{rl}
-\footnotesize\textsc{Summer Scholarship}: & \footnotesize\emph{Analysis of Potential Malicious Strategies toward Bit-Exchange with IPFS} \footnotesize{(April 2022 - August 2022)}\\
-& \footnotesize{Analysis of efficacy in hampering network communication between nodes in a private IPFS network}\\
-\textsc{Depi} \footnotesize{(March 2022 - Present)}: & \footnotesize{Terminal-based image viewer with network capabilities \& graphics protocol support}\\
-\textsc{Odo} \footnotesize{(January 2022 - Present)}: & \footnotesize{Codebase automation tool as a lightweight alternative to a build system}\\
-\textsc{Larz} \footnotesize{(August 2021 - Present)}: & \footnotesize{Archive tool, library, and format for efficient decompression (TAR \& LZ4)}\\
-\textsc{Oku} \footnotesize{(November 2020 - Present)}: & \footnotesize{Peer-to-peer Web browser with native IPFS support}\\
-\textsc{Dokkoo} \footnotesize{(October 2020 - Present)}: & \footnotesize{Data-driven Jamstack tool for creating publications, reports, dashboards, etc.}
-\end{tabular}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} lr }
+\emph{Introduction to Quantum Machine Learning} & November 2023\\
+\multicolumn{2}{p{\linewidth}}{Talk given at the Miami University Physics Department seminar on introductory concepts surrounding quantum computing, machine learning, and the intersection of the two fields.}\\
+\emph{Automation in IT Service Management} & May 2023\\
+\multicolumn{2}{p{\linewidth}}{Talk given at the 2023 Ohio Higher Education Computing Council (OHECC) conference detailing strategies to automate ITSM practices in higher education institutions.}\\
+\emph{Analysis of Potential Malicious Strategies toward Bit-Exchange with IPFS} & April 2022 - August 2022\\
+\multicolumn{2}{p{\linewidth}}{Summer research project investigating methods to disrupt network communication between nodes in a private IPFS network.}\\
+\emph{Oku} & November 2020 - Present\\
+\multicolumn{2}{p{\linewidth}}{Experimental Web browser with an encrypted \& local-first peer-to-peer (P2P) filesystem.}\\
+\end{tabular*}
 
 %----------------------------------------------------------------------------------------
 %	AWARDS AND CERTIFICATES
 %----------------------------------------------------------------------------------------
 
-\section{Awards and Certificates}
+\section{Awards}
 
-\footnotesize{\begin{tabular}{rl}
-\textsc{August 2023}: & Choose Ohio First Machine Learning Scholarship \footnotesize(\$3,844)\normalsize\\
-\textsc{May 2023}: & 
-Commendation in Undergraduate Research (2022 - 2023)\\
-\textsc{January 2023}: & Dean's List (Fall 2022 - 2023)\\
-\textsc{August 2022}: & Choose Ohio First Machine Learning Scholarship \footnotesize(\$4,099)\normalsize\\
-\textsc{June 2022}: & Dean's List (Spring 2021 - 2022)\\
-\textsc{April 2022}: & Undergraduate Summer Scholarship Program \footnotesize(\$2,600)\\
-\textsc{February 2022}: & Dean's List (Fall 2021 - 2022)\\
-\textsc{December 2021}: & Bertelsmann Technology Scholarship Program\\
-\textsc{August 2021}: & Choose Ohio First Machine Learning Scholarship \footnotesize(\$3,416)\normalsize\\
-\end{tabular}}\normalsize
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} lr }
+\textbf{Commendation in Undergraduate Research} & May 2023\\
+\textbf{Dean's List} & Fall 2023, Fall 2022, Spring 2022, Fall 2021\\
+\textbf{Choose Ohio First Machine Learning Scholarship} & August 2023, August 2022, August 2021\\
+\textbf{Bertelsmann Technology Scholarship Program} & December 2021\\
+% \textbf{Januay 2024}: & Dean's List (Fall 2023 - 2024)\\
+% \textbf{August 2023}: & Choose Ohio First Machine Learning Scholarship \footnotesize(\$3,844)\normalsize\\
+% \textbf{May 2023}: & 
+% Commendation in Undergraduate Research (2022 - 2023)\\
+% \textbf{January 2023}: & Dean's List (Fall 2022 - 2023)\\
+% \textbf{August 2022}: & Choose Ohio First Machine Learning Scholarship \footnotesize(\$4,099)\normalsize\\
+% \textbf{June 2022}: & Dean's List (Spring 2021 - 2022)\\
+% \textbf{April 2022}: & Undergraduate Summer Scholarship Program \footnotesize(\$2,600)\\
+% \textbf{February 2022}: & Dean's List (Fall 2021 - 2022)\\
+% \textbf{December 2021}: & Bertelsmann Technology Scholarship Program\\
+% \textbf{August 2021}: & Choose Ohio First Machine Learning Scholarship \footnotesize(\$3,416)\normalsize\\
+\multicolumn{2}{p{\linewidth}}{}
+\end{tabular*}
 
 
 \end{document}
