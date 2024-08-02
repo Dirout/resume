@@ -1,0 +1,101 @@
+\documentclass[letterpaper,9pt]{extarticle}
+\usepackage[letterpaper, portrait, margin=0.5in]{geometry}
+\usepackage{fontspec}
+\usepackage{inter}
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{titlesec}
+% \usepackage[none]{hyphenat}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Inter}
+\hypersetup{colorlinks,breaklinks}
+\titleformat{\section}
+{\color{RedViolet}\normalfont\Large\bfseries}
+{\color{RedViolet}\thesection}{1em}{}
+
+\begin{document}
+    \pagestyle{empty}
+    \raggedright%
+    \section*{Emil Sayahi}
+    \small
+    Oxford, OH |
+    \href{tel:+1-513-484-0972}{\color{black}{+1 (513) 484-0972}}
+    |
+    \href{mailto:limesayahi@gmail.com}{\color{black}limesayahi@gmail.com}\\
+    \normalsize
+
+    \raggedright%
+    \begin{minipage}[t]{0.60\textwidth}
+        \section*{Experience}
+        \subsection*{Technology Consulting Intern}
+        \subsubsection*{Protiviti}
+        Remote (May 2024 - August 2024)\\
+        \begin{itemize}
+            \item Assisted in business platform transformation (BPT) project for a client in the automotive industry.
+            \item Developed SAP BusinessObjects reports and universes in Web Intelligence and Information Design Tool.
+            \item Wrote Python script to create client deliverables for the project.
+        \end{itemize}
+
+        \subsection*{Software Engineer Intern}
+        \subsubsection*{HCLSoftware}
+        Remote (May 2023 - August 2023)\\
+        \begin{itemize}
+            \item Backend and frontend development on core team for IBM UrbanCode Velocity \& HCL Accelerate.
+            \item Contributed to migration of Docker Compose V1 to V2 for microservices.
+            \item Designed and implemented customer-facing UI in React for major release item.
+        \end{itemize}
+
+        \subsection*{Teaching Assistant}
+        \subsubsection*{Miami University}
+        Oxford, OH (August 2022 - December 2023)\\
+        \begin{itemize}
+            \item Assisted in Systems I and Fundamentals of Programming courses.
+            \item Assisted students in lab sessions, held office hours, and graded assignments.
+            \item Material included C++, Java, networking, computer architecture, and relational databases.
+        \end{itemize}
+
+        \subsection*{Software Engineer Intern}
+        \subsubsection*{Miami University}
+        Oxford, OH (May 2022 - May 2024)
+        \begin{itemize}
+            \item Automating IT Service Management (ITSM) practices using Amazon RDS, MySQL, Python, and TeamDynamix iPaaS.
+            \item Data integration projects included synchronising data between FM:Interact and TeamDynamix.
+            \item Developed an automated assistant using GPT-4 to handle support requests using the university knowledge base.
+        \end{itemize}
+
+        \section*{Projects}
+        \subsection*{Oku}
+        \subsubsection*{Creator}
+        Recipient of an NLnet grant through  
+
+        % \subsection*{GTK}
+        % \subsubsection*{Contributor}
+        % Wrote a CI/CD pipeline for the GTK-rs project to automate maintainence of Rust language bindings for GTK\@.
+
+        % \subsection*{tdxlib}
+        % \subsubsection*{Contributor}
+        % Extended the Python library for the TeamDynamix API to include additional functionality, such as retrieving reports.
+    \end{minipage} 
+    \hfill
+    \raggedleft%
+    \begin{minipage}[t]{0.3\textwidth}
+        \section*{Education}
+        \subsection*{Bachelor of Science (BS), Computer Science}
+        Miami University, Oxford, OH (August 2021 - May 2024)\\
+        GPA\@: 3.81\\
+
+        \section*{Skills}
+        \subsection*{Languages}
+        Rust, C\#, Java, JavaScript, C++, R, Python, D, SQL, HTML, CSS\\
+        \subsection*{Technologies}
+        GTK, .NET, React, Apollo GraphQL, Docker, Kubernetes, MongoDB, MySQL, GitHub Workflows\\
+
+        \section*{Presentations}
+        \subsubsection*{Introduction to Quantum Machine Learning}
+        Miami University, Oxford, OH (November 2023)\\
+        Talk given at the Miami University Physics Department seminar on introductory concepts surrounding quantum computing, machine learning, and the intersection of the two fields.\\
+        \subsubsection*{Automation in IT Service Management}
+        Wright State University, Dayton, OH (May 2023)\\
+        Talk given at the 2023 Ohio Higher Education Computing Council (OHECC) conference detailing strategies to automate ITSM practices in higher education institutions.
+    \end{minipage}
+\end{document}
