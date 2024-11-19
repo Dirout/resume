@@ -14,115 +14,119 @@
 \definecolor{linkcolour}{rgb}{0,0.4784313725,1} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 \usepackage{titlesec} % Used to customize the \section command
-\definecolor{sectioncolour}{rgb}{0.3333333333,0.08235294118,0}
-\titleformat{\section}{\large\raggedright\color{sectioncolour}}{}{0em}{}[\color{black}\titlerule] % Text formatting of sections
-\titlespacing{\section}{0pt}{2pt}{2pt} % Spacing around sections
+\definecolor{summarycolour}{rgb}{0.3803921569,0.3803921569,0.3960784314}
+\definecolor{sectioncolour}{rgb}{0.5176470588,0.5176470588,0.5372549020}
+\titleformat{\section}{\footnotesize\bfseries\raggedright\color{sectioncolour}}{}{0em}{} % Text formatting of sections
+\titlespacing{\section}{0pt}{2.5pt}{2.5pt} % Spacing around sections
 \usepackage[none]{hyphenat}
 \usepackage{enumitem}
 \setlist{leftmargin=*,nosep}
 \usepackage{setspace}
 \newfontfamily\garamond{EB Garamond}
 \begin{document}
-\singlespacing
+\setstretch{1.17}
 \pagestyle{empty}
 \par
-{\centering{\large \garamond{Emil Sayahi}}\\
+{\centering{\large \textbf{\href{https://www.linkedin.com/in/emil-sayahi/}{\color{black}{Emil Sayahi}}}}\\
 \footnotesize{
 Oxford, OH
 $\cdot$
-\href{tel:+1-513-484-0972}{\color{black}{+1 (513) 484-0972}}
+\href{tel:+1-513-484-0972}{\color{black}{(513) 484-0972}}
 $\cdot$
 \href{mailto:limesayahi@gmail.com}{\color{black}limesayahi@gmail.com}\\
 }}
+
+\footnotesize{\textbf{\color{summarycolour}{Systems programmer \& web developer with experience building \& contributing to world-class software ecosystems such as GNOME and the IndieWeb. Knowledgable in low-level programming, interested in building reliable, fast, memory-safe software that scales.}}}
 
 \section{Experience}
 
 \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} lr }
 
-\textbf{Hearts} & \footnotesize{Cincinnati, OH}\\
-\footnotesize{CTO} & \footnotesize{August 2024 - Present}\\
+\textbf{Hearts} & \scriptsize\bfseries\color{sectioncolour}{Cincinnati, OH}\\
+\footnotesize\bfseries\color{sectioncolour}{CTO} & \scriptsize\bfseries\color{sectioncolour}{August 2024 - Present}\\
 \multicolumn{2}{p{\linewidth}}{
-    \scriptsize{\vspace{-3.25mm}\begin{itemize}[nosep]
+    \scriptsize{\vspace{-0.1in}\begin{itemize}[nosep]
         \item Co-founded a seed-stage B2B SaaS startup.
         \item Directed \& supervised development of backend, assigned \& evaluated tasks delegated to junior developers.
+        \item Organised weekly retrospective meeting with a team of 5.
         \item Designed product architecture, technology stack, and technical vision.
         \item Negotiated with vendors, represented technical operations at conferences \& investor meetings.
-    \end{itemize}}
+    \end{itemize}\vspace{-0.1in}}
 }\\
 % \multicolumn{2}{p{\linewidth}}{\footnotesize{Developing product architecture, technology stack, and technical vision for a seed-stage B2B startup. Leading development of Rust backend, managing junior developers, and representing technical operations at conferences \& investor meetings.}}\\
 
-\textbf{Protiviti} & \footnotesize{Boston, MA}\\
-\footnotesize{Technology Consulting Intern} & \footnotesize{May 2024 - August 2024}\\
+\textbf{Protiviti} & \scriptsize\bfseries\color{sectioncolour}{Boston, MA}\\
+\footnotesize\bfseries\color{sectioncolour}{Technology Consulting Intern} & \scriptsize\bfseries\color{sectioncolour}{May 2024 - August 2024}\\
 \multicolumn{2}{p{\linewidth}}{
-    \scriptsize{\vspace{-3.25mm}\begin{itemize}
-        \item Consulted for automotive client concerned with regulatory compliance requiring business platform transformation (BPT).
+    \scriptsize{\vspace{-0.1in}\begin{itemize}
+        \item Aided 2 senior consultants for automotive client concerned with regulatory compliance requiring business platform transformation (BPT) after \$340m acquisition.
         \item Developed SAP BusinessObjects reports and universes in Web Intelligence and Information Design Tool as part of reimplementing a major client dashboard.
-        \item Discovered \& resolved recurring data loss among consultants by creating version-control procedure.
-        \item Automated creation of certain client deliverables with Python scripts, eliminating hours of deliverable creation \& validation.
-    \end{itemize}}
+        \item Discovered \& resolved recurring data loss among consulting team by introducing version-control procedures.
+        \item Automated creation of certain client deliverables with Python scripts, eliminating 4+ hours of deliverable creation \& validation.
+    \end{itemize}\vspace{-0.1in}}
 }\\
 % \multicolumn{2}{p{\linewidth}}{\footnotesize{Assisted in business platform transformation (BPT) project for automotive client aiming to maintain regulatory compliance. Developed SAP BusinessObjects reports and universes in Web Intelligence and Information Design Tool as part of reimplementing a major internal dashboard during technology transition. Solved recurring data loss within consulting team by creating version-control procedure. Automated creation of certain client deliverables with Python scripts, eliminating hours of deliverable creation \& validation.}}\\
 % \multicolumn{2}{c}{} \\
 
-\textbf{HCLSoftware} & \footnotesize{Remote}\\
-\footnotesize{Software Engineer Intern} & \footnotesize{May 2023 - August 2023}\\
+\textbf{HCLSoftware} & \scriptsize\bfseries\color{sectioncolour}{Remote}\\
+\footnotesize\bfseries\color{sectioncolour}{Software Engineer Intern} & \scriptsize\bfseries\color{sectioncolour}{May 2023 - August 2023}\\
 \multicolumn{2}{p{\linewidth}}{
-    \scriptsize{\vspace{-3.25mm}\begin{itemize}
-        \item Identified \& fixed bugs, and designed \& built UI elements, as core-team developer for HCL Accelerate and IBM UrbanCode Velocity products.
+    \scriptsize{\vspace{-0.1in}\begin{itemize}
+        \item Identified \& resolved bugs, and designed \& built UI elements, as developer in 10-person core team for HCL Accelerate and IBM UrbanCode Velocity products.
         \item Transitioned product from Docker Compose V1 to V2. Migrated portions of React frontend from class components to function components.
-        \item Developed frontend of a significant customer-facing feature in the final product update within the internship period.
-    \end{itemize}}
+        \item Developed frontend of new major customer-facing feature that had previously been delayed by 3+ months.
+    \end{itemize}\vspace{-0.1in}}
 }\\
 % \multicolumn{2}{p{\linewidth}}{\footnotesize{Worked as a backend \& frontend core-team developer on the HCL Accelerate and IBM UrbanCode Velocity products. Transitioned product from Docker Compose V1 to V2. Migrated portions of React frontend from class components to function components. Developed frontend of a significant customer-facing feature in the final product update within the internship period.}}\\
 % \multicolumn{2}{c}{} \\
 
-\textbf{Miami University, Department of Computer Science \& Software Engineering} & \footnotesize{Oxford, OH}\\
-\footnotesize{Teaching Assistant} & \footnotesize{August 2022 - December 2023}\\
+\textbf{Miami University, Department of Computer Science \& Software Engineering} & \scriptsize\bfseries\color{sectioncolour}{Oxford, OH}\\
+\footnotesize\bfseries\color{sectioncolour}{Teaching Assistant} & \scriptsize\bfseries\color{sectioncolour}{August 2022 - December 2023}\\
 \multicolumn{2}{p{\linewidth}}{
-    \scriptsize{\vspace{-3.25mm}\begin{itemize}
+    \scriptsize{\vspace{-0.1in}\begin{itemize}
         \item Assisted with instruction of Systems 1 and Fundamentals of Programming courses at Miami University; material consisted of object-oriented programming, Java, C/C++, introductory networking, introduction to computer architecture, and introduction to relational databases \& SQL.
-        \item Graded assignments, assisted students in lab sessions, and held weekly two-hour help sessions.
-    \end{itemize}}
+        \item Graded assignments, guided students in lab sessions, and held weekly two-hour help sessions.
+    \end{itemize}\vspace{-0.1in}}
 }\\
 % \multicolumn{2}{p{\linewidth}}{\footnotesize{Assisted instructors for Systems I and Fundamentals of Programming courses at Miami University; material consisted of object-oriented programming, Java, C/C++, introductory networking, introduction to computer architecture, and introduction to relational databases \& SQL.\@ Responsible for grading assignments, assisting students in lab sessions, and holding weekly two-hour help sessions.}}\\
 % \multicolumn{2}{c}{} \\
 
-\textbf{Miami University, IT Services} & \footnotesize{Oxford, OH}\\
-\footnotesize{Software Engineer Intern} & \footnotesize{May 2022 - May 2024}\\
+\textbf{Miami University, IT Services} & \scriptsize\bfseries\color{sectioncolour}{Oxford, OH}\\
+\footnotesize\bfseries\color{sectioncolour}{Software Engineer Intern} & \scriptsize\bfseries\color{sectioncolour}{May 2022 - May 2024}\\
 \multicolumn{2}{p{\linewidth}}{
-    \scriptsize{\vspace{-3.25mm}\begin{itemize}
+    \scriptsize{\vspace{-0.1in}\begin{itemize}
         \item Developed integrations with applications in Miami University's IT Service Management ecosystems using TeamDynamix iPaaS and Python scripts.
-        \item Designed, created, and maintained internal employee recognition tool and user-facing IT support chatbot.
-        \item Created internal tools to manage building resources and instructor equipment, eliminating both the need to purchase updates for facility management software and weeks of manual database changes, and improving record-keeping of employee hardware.
+        % \item Designed, created, and maintained internal employee recognition tool and user-facing IT support chatbot.
+        \item Created internal tool to manage data associated with 62+ university-owned buildings, eliminating the need to purchase updates for facility management software \& 2+ weeks of manual database changes every 16 weeks.
+        \item Created internal tool to manage university-owned hardware, improving record-keeping \& accountability.
         \item Authored documentation of best practices, internal procedures, and technical standards; onboarded new engineers.
         \item Presented at the 2023 Ohio Higher Education Computing Council (OHECC) Conference at Wright State University on ITSM best practices for institutions of higher education.
-    \end{itemize}}
+    \end{itemize}\vspace{-0.1in}}
 }\\
 % \multicolumn{2}{p{\linewidth}}{\footnotesize{Developed integrations with applications in Miami University's IT Service Management ecosystems using TeamDynamix iPaaS and Python scripts. Collaborated with TeamDynamix to design new platform features. Created internal employee recognition tool and IT support chatbot. Created internal tools to manage building resources and instructor equipment, eliminating both the need to purchase updates for facility management software and weeks of manual database changes, and improving record-keeping of employee hardware. Created technical documentation \& standards for other engineers and mentored new employees as part of onboarding procedure. Presented at the 2023 Ohio Higher Education Computing Council (OHECC) Conference at Wright State University on ITSM best practices for institutions of higher education.}}\\
 % \multicolumn{2}{c}{} \\
 
-\textbf{Miami University, University Libraries} & \footnotesize{Oxford, OH}\\
-\footnotesize{Women's Grant Student Assistant} & \footnotesize{March 2022 - May 2022}\\
-\multicolumn{2}{p{\linewidth}}{
-    \scriptsize{\vspace{-3.25mm}\begin{itemize}
-        \item Digitised the records of Carolyn Jefferson-Jenkins dating to her tenure as president of the League of Women Voters; funded by the Miami Initiative for Advancing, Mentoring, and Investing in Women (M.I.A.M.I. WOMEN).
-    \end{itemize}}
-}\\
+% \textbf{Miami University, University Libraries} & \footnotesize{Oxford, OH}\\
+% \footnotesize{Women's Grant Student Assistant} & \footnotesize{March 2022 - May 2022}\\
+% \multicolumn{2}{p{\linewidth}}{
+%     \scriptsize{\vspace{-0.1in}\begin{itemize}
+%         \item Digitised the records of Carolyn Jefferson-Jenkins dating to her tenure as president of the League of Women Voters; funded by the Miami Initiative for Advancing, Mentoring, and Investing in Women (M.I.A.M.I. WOMEN).
+%     \end{itemize}}
+% }\\
 % \multicolumn{2}{p{\linewidth}}{\footnotesize{Assisted the Digital Collections librarian at Walter Havighurst Special Collections, University Archives \& Preservation. Digitised the records of Carolyn Jefferson-Jenkins dating to her tenure as president of the League of Women Voters; supported grant funding from the Miami Initiative for Advancing, Mentoring, and Investing in Women (M.I.A.M.I. WOMEN).}}\\
 % \multicolumn{2}{c}{} \\
 
-\textbf{Miami University, Office of Government Relations} & \footnotesize{Oxford, OH}\\
-\footnotesize{Government Relations Intern} & \footnotesize{August 2021 - May 2024}\\
+\textbf{Miami University, Office of Government Relations} & \scriptsize\bfseries\color{sectioncolour}{Oxford, OH}\\
+\footnotesize\bfseries\color{sectioncolour}{Government Relations Intern} & \scriptsize\bfseries\color{sectioncolour}{August 2021 - May 2024}\\
 \multicolumn{2}{p{\linewidth}}{
-    \scriptsize{\vspace{-3.25mm}\begin{itemize}
-        \item Advocated for the interests of Miami University in Washington, DC and the Ohio Statehouse in Columbus, OH.
-        \item Spoke with Ohio State Senators \& Representatives, the Chancellor of the Ohio Department of Higher Education, and legislative aides of US Representatives.
+    \scriptsize{\vspace{-0.1in}\begin{itemize}
+        \item Advocated for the interests of Miami University in meetings with Ohio State Senators \& Representatives, the Chancellor of the Ohio Department of Higher Education, and legislative aides of US Representatives.
         \item Advocated for increased funding for the Federal Pell Grant Program, Ohio College Opportunity Grant (OCOG), Ohio State Share of Instruction (SSI), and the Choose Ohio First (COF) Scholarship Program.
-        \item Assisted presidents, government relations directors, and students of Inter-University Council of Ohio members in opposing state-level legislation harmful to higher education.
-    \end{itemize}}
+        \item Supported presidents, government relations directors, and students of Inter-University Council of Ohio members in opposing state-level legislation harmful to higher education.
+    \end{itemize}\vspace{-0.1in}}
 }\\
 % \multicolumn{2}{p{\linewidth}}{\footnotesize{Advocated for Miami University and higher education in Washington, DC and the Ohio Statehouse in Columbus, OH. Met with Ohio State Senators \& Representatives, the Chancellor of the Ohio Department of Higher Education, and legislative aides of US Representatives. Priorities included increasing funding for the Federal Pell Grant Program, Ohio College Opportunity Grant (OCOG), Ohio State Share of Instruction (SSI), and the Choose Ohio First (COF) Scholarship Program. Assisted presidents, government relations directors, and students of Inter-University Council of Ohio members in opposing state-level legislation harmful to higher education.}}\\
-\end{tabular*}\\
+\end{tabular*}\vspace{-0.1in}\\
 
 \section{Projects \& Presentations}
 
@@ -145,6 +149,13 @@ $\cdot$
 \emph{Bachelor of Science} in \emph{Computer Science} --- GPA\@: 3.81 (magna cum laude) & August 2021 - May 2024
 \end{tabular*}}
 
+\section{Skills}
+\scriptsize{
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} lr }
+\textbf{Languages}: & Rust, C\#, JavaScript, Python, Java, PHP\\
+\textbf{Technologies}: & Linux, Git, GitHub Workflows, Postgres, MySQL, GraphQL, React, MongoDB, Docker, Deno, Node.js, HTML, CSS\\
+\textbf{Techniques \& Methodologies}: & Agile, Scrum, unit testing, end-to-end (E2E) testing
+\end{tabular*}}
 \section{Awards}
 
 \scriptsize{
