@@ -1,0 +1,48 @@
+CSE 174 - Fundamentals of Programming and Problem Solving
+ENG 111 - Composition and Rhetoric
+GEO 101 - Global Forces, Local Diversity
+HST 111 - Survey of American History to 1877
+HST 112 - Survey of American History: From 1877 to the Present
+HST T99 - European History
+PHY 161 - Physics for the Life Sciences with Laboratory I
+POL 241 - American Political System
+MTH T01 - Pre-Calculus
+ENT 235 - Computer-Aided Design
+MTH 251 - Calculus II
+CHM 141 - College Chemistry
+CHM 144 - College Chemistry Laboratory
+MTH 222 - Introduction to Linear Algebra
+CEC 101 - Computing, Engineering & Society
+CSE 102 - Introduction to Computer Science and Software Engineering
+CSE 271 - Object-Oriented Programming
+MTH 151 - Calculus I
+POR 204 - Brazilian Culture Through Music and Film
+CSE 167 - Introduction to Cyber Security
+CSE 274 - Data Abstraction and Data Structures
+CSE 278 - Systems I: Introduction to Systems Programming
+MTH 231 - Elements of Discrete Mathematics
+THE 191 - Experiencing Theatre
+CSE 201 - Introduction to Software Engineering
+CSE 381 - Systems 2: OS, Concurrency, Virtualization, and Security
+CSE 385 - Database Systems
+ENG 313 - Technical Writing
+STA 301 - Applied Statistics
+CSE 374 - Algorithms I
+CSE 383 - Web Application Programming
+CSE 432 - Machine Learning
+CSE 470N - Quantum Computing
+STA 363 - Introduction to Statistical Modeling
+STA 401 - Probability
+BIO 116 - Biological Concepts: Structure, Function, Cellular, and Molecular Biology
+CSE 262 - Technology, Ethics, and Global Society
+CSE 448 - Senior Design Project
+CSE 465 - Comparative Programming Languages
+CSE 486 - Introduction to Artificial Intelligence
+STA 463 - Regression Analysis
+STC 135 - Principles of Public Speaking
+CSE 386 - Foundations of Computer Graphics and Games
+CSE 449 - Senior Design Project
+CSE 485 - Advanced Database Systems
+EDL 204 - Sociocultural Studies in Education
+STA 333 - Nonparametric Statistics
+STA 467 - Statistical Learning
